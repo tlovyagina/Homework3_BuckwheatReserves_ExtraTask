@@ -1,13 +1,13 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import java.util.Scanner;
+
+public class App
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void main( String[] args ) {
+      BuckwheatReservesCalculator calculator = new BuckwheatReservesCalculator();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("В течение скольки месяцев Василий хочет питаться гречкой:");
+        calculator.calculate(scanner.nextInt());
     }
 }
